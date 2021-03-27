@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Tag;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 @Tag("database")// Es una etiqueta para que en la clase SuiteTest podamos definir que se ejecuten las clases
                 // o métodos que queramos seleccionandolos por etiqueta "@Tag"
@@ -11,6 +12,8 @@ public class BookShop implements IBookShop{
 
     // estructura datos interna
     List<Book> books;
+
+    Logger log  = Logger.getLogger("BookShopLog");
 
     // constructor
     public BookShop(){
@@ -30,7 +33,7 @@ public class BookShop implements IBookShop{
 
     // metodo que devuelve el tamaño de la librería
     public int getSize() {
-        System.out.println("getSize(): " + books.size());
+        log.info("getSize(): " + books.size());
         return books.size();
     }
 
