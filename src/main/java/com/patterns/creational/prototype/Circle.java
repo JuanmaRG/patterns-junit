@@ -25,7 +25,8 @@ public class Circle extends Shape{
     }
 
     public Circle clone() throws CloneNotSupportedException {
-        return (Circle) super.clone();
+        return new Circle(this.getColor(),getRadio());
+
     }
 
     @Override

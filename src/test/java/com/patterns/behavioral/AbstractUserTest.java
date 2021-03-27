@@ -7,14 +7,24 @@ import com.patterns.behavioral.mediator.User;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.*;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(MockitoExtension.class)
 class AbstractUserTest {
 
+    @Captor
+    ArgumentCaptor<String> messageCaptor;
 
+    @Mock
     ChatMediator chat = new Telegram();
+
+    @InjectMocks
     AbstractUser user1 = new User(chat, "Juan");
+
     AbstractUser user2 = new User(chat, "Alberto");
 
 
@@ -46,8 +56,16 @@ class AbstractUserTest {
     @DisplayName("comprobando recibe el mensaje ")
     @Disabled("FIX - mediator tests")
     void test5() {
+        chat.addUser(user1);
+        chat.addUser(user2);
+
         String hola = "Hola buenas!";
-        assertEquals(hola, user2);
+
+        user1.send(hola);
+
+        Mockito.verify(chat).sendMessage(messageCaptor.capture(),user1);
+
+        assertEquals(messageCaptor.getValue(),hola);
     }
 
 }
