@@ -26,6 +26,15 @@ public class BookShop implements IBookShop{
             books.add(book);
     }
 
+    public List<Book> getBooks() {
+        return books;
+    }
+
+    public BookShop setBooks(List<Book> books) {
+        this.books = books;
+        return this;
+    }
+
     // metodo que obtiene un libro en concreto
     public Object getOne(int index) {
         return books.get(index - 1);
