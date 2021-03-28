@@ -8,12 +8,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ShopCartTest {
 
-    ShopCart trolley;
+    ShopCart trolley = new ShopCart();
 
-    @BeforeEach
-    void setUp() {
-        ShopCart trolley = new ShopCart();
-    }
+
 
     @Test
     @DisplayName("Testear que se insertan Productos")
