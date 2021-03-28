@@ -17,12 +17,15 @@ class CalculatorTest {
 
     @Test
     void sumTest(){
-        System.out.println("Suma");
+        Calculator calc = new Calculator();
+        assertEquals(4,calc.add(2,2));
+
     }
 
 
     @Test
     void subTest(){
-        System.out.println("Resta");
+        Calculator calc = new Calculator();
+        assertEquals(2,calc.subtract(4,2));
     }
 }
