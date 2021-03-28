@@ -1,0 +1,5 @@
+
+Q
+java:S1128"4Remove this unused import 'java.util.logging.Level'.(…µÛ¶8µÏ­¥‡/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(à±»ýùÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(òÿ©íûÿÿÿÿ8º“œ¥‡/
