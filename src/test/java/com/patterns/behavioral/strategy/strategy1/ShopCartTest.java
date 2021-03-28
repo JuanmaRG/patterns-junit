@@ -6,11 +6,22 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ShopCartTest {
+class ShopCartTest {
+
+    ShopCart trolley;
 
     @BeforeEach
     void setUp() {
         ShopCart trolley = new ShopCart();
+    }
+
+    @Test
+    @DisplayName("Testear que se insertan Productos")
+    void checkAddProduct() {
+        Product productoTest = new Product("1234",2D);
+        trolley.addProduct(productoTest);
+        assertTrue(trolley.checkProductList());
+
     }
 
 

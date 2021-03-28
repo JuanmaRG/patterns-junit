@@ -19,6 +19,10 @@ public class ShopCart {
         this.products.remove(product);
     }
 
+    public Boolean checkProductList(){
+        return products.isEmpty();
+    }
+
     // pagar utilizando una estrategia de pago
     public void pay(PaymentStrategy paymentMethod){
         double amount = 0;
