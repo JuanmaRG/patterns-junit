@@ -51,7 +51,7 @@ class AbstractUserTest {
     void test4() {
         assertTrue(chat instanceof ChatMediator);
     }
-
+/*
     @Test
     @DisplayName("comprobando recibe el mensaje ")
     @Disabled("FIX - mediator tests")
@@ -66,6 +66,6 @@ class AbstractUserTest {
         Mockito.verify(chat).sendMessage(messageCaptor.capture(),user1);
 
         assertEquals(messageCaptor.getValue(),hola);
-    }
+    }*/
 
 }
