@@ -22,13 +22,11 @@ public class Main {
         books.addBook(book3);
 
 
-        for (Book book : books) {
-            log.info(book.toString());
-        }
+
 
 
         for (Book book: books) {
-            log.info(book.toString());
+            log.info("Se recuperado un libro: " + book);
 
         }
     }
