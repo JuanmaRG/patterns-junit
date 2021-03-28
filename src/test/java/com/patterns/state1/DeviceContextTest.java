@@ -40,7 +40,7 @@ void checkStatenotNull()  {
         State start = new OnState();
         stateContext.setDeviceState(start);
         stateContext.doAction();
-        assertEquals(stateContext.getDeviceState(),start);
+        assertEquals(start,stateContext.getDeviceState());
     }
     @Test
     @DisplayName("getDeviceStateOffnotNull")

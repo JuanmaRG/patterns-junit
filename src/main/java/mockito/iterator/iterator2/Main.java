@@ -4,7 +4,7 @@ package mockito.iterator.iterator2;
 import mockito.iterator.iterator1.Book;
 
 
-import java.util.logging.Logger;
+
 
 public class Main {
 
@@ -21,6 +21,6 @@ public class Main {
         books.addBook(book2);
         books.addBook(book3);
 
-        ;
+
     }
 }
