@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Logger log  = Logger.getLogger("Log");
+
 
         Book book1 = new Book("5656435", "Hawkins", 2021 );
         Book book2 = new Book("124234fdfg", "Tolle", 1997 );
@@ -21,13 +21,6 @@ public class Main {
         books.addBook(book2);
         books.addBook(book3);
 
-
-
-
-
-        for (Book book: books) {
-            log.info("Se recuperado un libro: " + book);
-
-        }
+        ;
     }
 }
