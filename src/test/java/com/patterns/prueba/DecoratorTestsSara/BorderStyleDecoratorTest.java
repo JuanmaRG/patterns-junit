@@ -2,6 +2,7 @@ package com.patterns.prueba.DecoratorTestsSara;
 
 import com.patterns.structural.decorator.BorderStyleDecorator;
 import com.patterns.structural.decorator.Circle;
+import com.patterns.structural.decorator.Rectangle;
 import com.patterns.structural.decorator.Shape;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -12,6 +13,7 @@ class BorderStyleDecoratorTest {
 
     @Test
     void draw() {
+        Shape rectangulo = new Rectangle() ;
     }
 
     @Test
