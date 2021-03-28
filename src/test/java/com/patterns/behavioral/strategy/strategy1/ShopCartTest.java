@@ -8,18 +8,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ShopCartTest {
 
+
     ShopCart trolley = new ShopCart();
 
 
-
     @Test
-    @DisplayName("Testear que se insertan Productos")
-    void checkAddProduct() {
-        Product productoTest = new Product("1234",2D);
-        trolley.addProduct(productoTest);
-        assertTrue(trolley.checkProductList());
+    @DisplayName("Testear que la lista esta vacia")
+    public void checkIsEmpty() {
+        assertTrue(trolley.getProducts().isEmpty());
 
     }
-
-
 }

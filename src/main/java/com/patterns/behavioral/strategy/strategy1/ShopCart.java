@@ -19,8 +19,13 @@ public class ShopCart {
         this.products.remove(product);
     }
 
-    public Boolean checkProductList(){
-        return products.isEmpty();
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public ShopCart setProducts(List<Product> products) {
+        this.products = products;
+        return this;
     }
 
     // pagar utilizando una estrategia de pago
