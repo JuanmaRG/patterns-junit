@@ -12,7 +12,6 @@ public class Main {
         } else if (carType.equals("electric")) {
             car = new ElectricCar();
         }else{
-            //throw new RuntimeException("Invalid car");
             throw  new CarTypeNotFoundException("no se ha introducido un coche valido");
         }
         car.accelerate();
