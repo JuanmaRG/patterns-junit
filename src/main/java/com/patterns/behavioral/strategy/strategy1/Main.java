@@ -20,7 +20,7 @@ public class Main {
         cart.addProduct(product1);
         cart.addProduct(product2);
         System.out.println(cart.getProducts().isEmpty());
-        //cart.pay(new PaypalStrategy("","",""));
-        //cart.pay(new CreditCardStrategy("","","", ""));
+        cart.pay(new PaypalStrategy("","",""));
+        cart.pay(new CreditCardStrategy("","","", ""));
     }
 }

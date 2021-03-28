@@ -1,6 +1,6 @@
 package com.patterns.behavioral.strategy.strategy1;
 
-public class CreditCardStrategy implements PaymentStrategy{
+class CreditCardStrategy implements PaymentStrategy{
 
     private String name;
     private String cardNumber;

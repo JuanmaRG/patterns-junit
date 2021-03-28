@@ -14,7 +14,7 @@ class ShopCartTest {
 
     @Test
     @DisplayName("Testear que la lista esta vacia")
-    public void checkIsEmpty() {
+   void checkIsEmpty() {
         assertTrue(trolley.getProducts().isEmpty());
 
     }

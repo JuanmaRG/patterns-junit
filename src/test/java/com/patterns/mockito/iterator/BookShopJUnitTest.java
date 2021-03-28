@@ -19,7 +19,7 @@ public class BookShopJUnitTest {
 
     @Test
     @DisplayName("Test name")
-    public void testName() {
+    void testName() {
 
         Book book1 = new Book("1234379873","Darwin",1990);
         Book book2 = new Book("1234379873","Darwin",1990);
