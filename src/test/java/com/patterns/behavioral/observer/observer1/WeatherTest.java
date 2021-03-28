@@ -1,6 +1,7 @@
 package com.patterns.behavioral.observer.observer1;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +14,7 @@ class WeatherTest {
     private WeatherType currentWeather;
     private List<WeatherObserver> observers;
 
-    @Test
+
     @BeforeEach
     void comienzo(){
         System.out.println("comienzo");
@@ -70,6 +71,7 @@ class WeatherTest {
     }
 
     @Test
+    @Disabled
     @DisplayName("cambiar el tiempo")//parametros
     void changeWeather() {
         WeatherType type = WeatherType.RAINY;

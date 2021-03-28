@@ -7,6 +7,9 @@ public class Computer implements WeatherObserver{
 
     private List<String> receivedMessages = new ArrayList<>();
 
+    public Computer() {
+        this.receivedMessages = new ArrayList<>();
+    }
 
     @Override
     public void update(WeatherType type) {
