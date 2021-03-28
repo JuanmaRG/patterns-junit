@@ -22,7 +22,7 @@ void checkStatenotNull()  {
     @DisplayName("the object type DeviceContext")
     void createState()  {
         DeviceContext stateContext = new DeviceContext();
-        assertFalse(!(stateContext instanceof DeviceContext));
+        assertTrue(stateContext instanceof DeviceContext);
 }
    @Test
     @DisplayName("getDeviceStateOnIsnotNull")
@@ -40,7 +40,7 @@ void checkStatenotNull()  {
         State start = new OnState();
         stateContext.setDeviceState(start);
         stateContext.doAction();
-        assertFalse(stateContext.getDeviceState().equals(""));
+        assertNotEquals(stateContext.getDeviceState(), "");
     }
     @Test
     @DisplayName("getDeviceStateOffnotNull")
