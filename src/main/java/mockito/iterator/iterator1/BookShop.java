@@ -55,10 +55,7 @@ public class BookShop implements IBookShop {
 
         @Override
         public boolean hasNext() {
-            if (this.currentIndex < books.size()) {
-                return true;
-            }
-            return false;
+            return this.currentIndex < books.size();
 
         }
 
