@@ -8,7 +8,7 @@ class MainTest {
 
    @Test
    @DisplayName("Chequear que se crea un coche electrico")
-   public void CheckElectricCar() {
+   void CheckElectricCar() {
 
     ICar coche = new ElectricCar();
 
