@@ -5,6 +5,7 @@ import com.patterns.behavioral.iterator.iterator1.Book;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class BookShop implements Iterable<Book>{
 
@@ -36,7 +37,7 @@ public class BookShop implements Iterable<Book>{
         }
 
         @Override
-        public Book next() {
+        public Book next() throws NoSuchElementException {
             return books.get(currentIndex++);
         }
     }
