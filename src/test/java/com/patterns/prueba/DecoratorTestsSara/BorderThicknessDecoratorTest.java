@@ -13,18 +13,6 @@ import org.junit.jupiter.api.Test;
 
 class BorderThicknessDecoratorTest {
 
-   @Test
-    @Disabled("No se ha implementado")
-   void draw() {
-        Shape rectangulo = new Rectangle();
-        Shape rectanguloDecorado = new BorderThicknessDecorator(rectangulo, "2px");
-        //assertEquals("Border thickness is: 2px", rectanguloDecorado.draw());
-    }
-
-    @Test
-    @Disabled("No se ha implementado")
-    void resize() {
-    }
 
     @Test
     void description() {
