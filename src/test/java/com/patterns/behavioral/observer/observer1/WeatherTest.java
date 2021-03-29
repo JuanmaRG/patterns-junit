@@ -70,15 +70,4 @@ class WeatherTest {
         assertNotEquals(count,count2);
     }
 
-    @Test
-    @Disabled
-    @DisplayName("cambiar el tiempo")//parametros
-    void changeWeather() {
-        WeatherType type = WeatherType.RAINY;
-        WeatherObserver computer = new Computer();
-        computer.update(type);
-
-
-
-    }
 }

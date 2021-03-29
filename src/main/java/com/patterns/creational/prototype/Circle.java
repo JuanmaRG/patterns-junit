@@ -30,9 +30,9 @@ public class Circle extends Shape{
     }
 
     @Override
-    public Circle clone() {
-        //return (Circle)super.clone();
-        return new Circle(this);
+    public Circle clone() throws CloneNotSupportedException {
+        return (Circle)super.clone();
+
 
     }
 
