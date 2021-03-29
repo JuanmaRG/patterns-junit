@@ -25,8 +25,6 @@ r
 Bsrc/main/java/com/patterns/behavioral/iterator/iterator1/Main.java,c\5\c5d04b593f2ba52edb589cc84f839eb78feb3145
 w
 Gsrc/main/java/com/patterns/behavioral/iterator/iterator1/IBookShop.java,0\7\07c2153f4e0bc08a0def596eae1b984d20432a01
-j
-:src/test/java/com/patterns/creational/builder/prueba2.java,a\a\aae0bfd0622b41e794c98fca8768d4a9312ca308
 r
 Bsrc/main/java/com/patterns/behavioral/iterator/iterator1/Book.java,b\4\b44cc0b759b44ae99d8d85e82bd49e7d3405c320
 v
@@ -161,3 +159,11 @@ k
 ;src/main/java/com/patterns/structural/decorator/Circle.java,0\c\0c9e27a80071db92fd2a8b6f95285a1b827ebca3
 „
 Tsrc/test/java/com/patterns/behavioral/strategy/strategy1/CreditCardStrategyTest.java,8\3\832875828ac9c950fa4369274f1181e1a37b4e16
+x
+Hsrc/test/java/com/patterns/creational/singleton/eager/SingletonTest.java,d\f\df09cd7ebb5a7d8f0b194d9c697badc721515b54
+}
+Msrc/test/java/com/patterns/creational/singleton/lazy/DBConfigurationTest.java,0\9\099ed10db4204f751277bc50c6524e3e0ca8518b
+ƒ
+Ssrc/test/java/com/patterns/creational/singleton/threadsafe/DbConfigurationTest.java,8\2\8264feb75ba6aa9bb4315cc5faa6c260168a3e67
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

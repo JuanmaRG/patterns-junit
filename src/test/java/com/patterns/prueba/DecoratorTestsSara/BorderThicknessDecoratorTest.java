@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
 class BorderThicknessDecoratorTest {
 
    @Test
-    @Disabled
+    @Disabled("No se ha implementado")
    void draw() {
         Shape rectangulo = new Rectangle();
         Shape rectanguloDecorado = new BorderThicknessDecorator(rectangulo, "2px");
@@ -22,7 +22,7 @@ class BorderThicknessDecoratorTest {
     }
 
     @Test
-    @Disabled
+    @Disabled("No se ha implementado")
     void resize() {
     }
 
