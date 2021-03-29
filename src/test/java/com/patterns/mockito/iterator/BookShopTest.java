@@ -1,9 +1,8 @@
 package com.patterns.mockito.iterator;
 
-import com.patterns.behavioral.iterator.iterator1.CustomIterator;
+
 import mockito.iterator.iterator1.Book;
 import mockito.iterator.iterator1.BookShop;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -13,8 +12,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.util.Arrays;
-import java.util.List;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -94,8 +92,7 @@ class BookShopTest {
 
         // 3 - Verificar datos y mock
         verify(bookShop, times(1)).getSize();
-       // verify(bookShop, times(1)).addBook(new Book("5656435", "Hawkins", 2021 ));
-       // verify(bookShop, times(1)).addBook(new Book("1254265", "Martins", 2021 ));
+
     }
 
 
