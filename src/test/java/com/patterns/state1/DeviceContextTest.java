@@ -58,7 +58,7 @@ void checkStatenotNull()  {
         State stop = new OffState();
         stateContext.setDeviceState(stop);
         stateContext.doAction();
-        assertNotEquals("",stateContext.getDeviceState());
+        assertTrue(stateContext.getDeviceState() instanceof  State);
 }
     @Test
     @DisplayName("checkStateisON")
