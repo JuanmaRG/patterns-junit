@@ -1,10 +1,11 @@
 package com.patterns.creational.singleton.threadsafe;
 
 import com.patterns.creational.singleton.threadsafe.DbConfiguration;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+@Tag("database")
 class DbConfigurationTest {
 
     DbConfiguration config1 = DbConfiguration.getDBConfiguration();

@@ -14,10 +14,8 @@ import org.junit.runner.RunWith;
  clase o método contenga la Tag "database"
 * */
 @RunWith(JUnitPlatform.class)
-// @SelectPackages({"com.patterns.creational", "com.patterns.iterator"})
-@SelectPackages("com.patterns")
+@SelectPackages({"com.patterns.creational", "com.patterns.iterator"})
 @SuiteDisplayName("Suite patrones")
-// @IncludeTags("database") // También se puede usar @ExcludeTags para el caso contrario
-// @SelectClasses(PaypalStrategyTest.class)
+@IncludeTags("database") // También se puede usar @ExcludeTags para el caso contrario
 public class SuiteTest {
 }

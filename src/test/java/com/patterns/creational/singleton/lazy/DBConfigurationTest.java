@@ -1,10 +1,11 @@
 package com.patterns.creational.singleton.lazy;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+@Tag("database")
 class DBConfigurationTest {
 
     DBConfiguration config1;
